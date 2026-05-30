@@ -251,7 +251,7 @@ export default function PerformancesPage() {
                 borderRadius: 8,
                 fontSize: 12,
               }}
-              formatter={(v: number) => `${v} min`}
+              formatter={(value) => `${value} min`}
             />
             <Legend wrapperStyle={{ fontSize: 12 }} />
             <Area
