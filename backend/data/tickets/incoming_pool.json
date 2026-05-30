@@ -1,0 +1,46 @@
+[
+  {
+    "id": "TKT-2026-INC-A",
+    "channel": "email",
+    "customer": {
+      "name": "Nathalie Garcia",
+      "email": "nathalie.garcia.dijon@gmail.com",
+      "phone": null
+    },
+    "subject": "Chronopost en retard - cadeau mariage",
+    "raw_message": "Bonjour, j'ai envoyé un Chronopost (numéro 5C77889922FR) hier en pensant qu'il arriverait aujourd'hui pour le mariage de ma sœur. Le suivi indique 'en cours d'acheminement'. La cérémonie est demain matin, je suis vraiment paniquée. Y a-t-il un moyen d'accélérer la livraison ou de la rediriger directement sur le lieu de la réception ? Merci d'avance, c'est très important pour moi."
+  },
+  {
+    "id": "TKT-2026-INC-B",
+    "channel": "email",
+    "customer": {
+      "name": "Hans Müller",
+      "email": "hans.mueller@gmx.de",
+      "phone": null
+    },
+    "subject": "Verlorenes Paket aus Frankreich",
+    "raw_message": "Sehr geehrte Damen und Herren, ich habe ein Paket aus Lyon nach München bestellt (Tracking-Nummer EE112233445FR), das nun seit 12 Tagen nicht angekommen ist. Können Sie mir helfen, es zu finden? Es handelt sich um einen Wein, geschenkt von meinem Schwiegervater. Mit freundlichen Grüßen, Hans Müller"
+  },
+  {
+    "id": "TKT-2026-INC-C",
+    "channel": "appel",
+    "customer": {
+      "name": "M. Dupond",
+      "email": null,
+      "phone": "+33 6 99 88 77 66"
+    },
+    "subject": "Appel entrant - boîte aux lettres cassée",
+    "raw_message": "[Transcription d'appel - durée 1:20]\n\nClient : Allô bonjour, je vous appelle parce que ma boîte aux lettres a été forcée pendant la nuit et plein de courrier a disparu. Je voulais savoir comment me faire renvoyer les recommandés qui auraient pu être laissés dedans et qu'on pourrait pas récupérer.\n\nConseiller : D'accord monsieur, vous avez fait une déclaration ?\n\nClient : Oui j'ai porté plainte au commissariat ce matin. Mais le facteur est passé hier soir donc je suis sûr qu'il y avait du courrier."
+  },
+  {
+    "id": "TKT-2026-INC-D",
+    "channel": "formulaire",
+    "customer": {
+      "name": "Camille Roux",
+      "email": "camille.roux.boulanger@gmail.com",
+      "phone": null
+    },
+    "subject": "Tarif envoi colis Réunion",
+    "raw_message": "Bonjour, je voudrais envoyer un colis de 4kg à ma fille qui vit à La Réunion. Quels sont les tarifs et les délais ? Merci."
+  }
+]

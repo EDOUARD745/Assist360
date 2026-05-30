@@ -1,0 +1,80 @@
+{
+  "sophie.bernard@gmail.com": [
+    {
+      "id": "HIST-2026-0410-A",
+      "date": "2026-04-10",
+      "channel": "email",
+      "subject": "Retard livraison Chronopost",
+      "type": "reclamation",
+      "summary": "Retard de 48h sur livraison Chronopost le 8 avril, indemnisation accordée.",
+      "outcome": "resolved",
+      "satisfaction": 4
+    },
+    {
+      "id": "HIST-2026-0218-A",
+      "date": "2026-02-18",
+      "channel": "appel",
+      "subject": "Colis endommagé",
+      "type": "reclamation_indemnisation",
+      "summary": "Colis Colissimo arrivé avec emballage déchiré, livre cassé. Indemnisation versée sous 10 jours.",
+      "outcome": "resolved",
+      "satisfaction": 5
+    }
+  ],
+  "lucie.fontaine@gmail.com": [
+    {
+      "id": "HIST-2026-0521-A",
+      "date": "2026-05-21",
+      "channel": "email",
+      "subject": "Colis abîmé - relance n°1",
+      "type": "reclamation_indemnisation",
+      "summary": "Demande d'indemnisation pour colis 9D11223344FR - première relance.",
+      "outcome": "pending",
+      "satisfaction": null
+    },
+    {
+      "id": "HIST-2026-0525-A",
+      "date": "2026-05-25",
+      "channel": "email",
+      "subject": "Re: Colis abîmé - relance n°2",
+      "type": "reclamation_indemnisation",
+      "summary": "Deuxième relance sans réponse de notre part - escalade en cours.",
+      "outcome": "pending",
+      "satisfaction": null
+    },
+    {
+      "id": "HIST-2026-0301-A",
+      "date": "2026-03-01",
+      "channel": "formulaire",
+      "subject": "Information service Pack Famille",
+      "type": "demande_info",
+      "summary": "Renseignement sur le tarif Pack Famille Colissimo.",
+      "outcome": "resolved",
+      "satisfaction": 3
+    }
+  ],
+  "karim.benali.pro@gmail.com": [
+    {
+      "id": "HIST-2026-0102-A",
+      "date": "2026-01-02",
+      "channel": "email",
+      "subject": "Changement adresse de facturation",
+      "type": "changement_adresse",
+      "summary": "Mise à jour adresse pro après déménagement entreprise.",
+      "outcome": "resolved",
+      "satisfaction": 5
+    }
+  ],
+  "j.carter@outlook.com": [
+    {
+      "id": "HIST-2025-1218-A",
+      "date": "2025-12-18",
+      "channel": "email",
+      "subject": "International parcel UK→FR",
+      "type": "suivi_colis",
+      "summary": "First-time international shipment query, resolved with tracking link.",
+      "outcome": "resolved",
+      "satisfaction": 5
+    }
+  ]
+}

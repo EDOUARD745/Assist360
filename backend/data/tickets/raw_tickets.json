@@ -1,0 +1,146 @@
+[
+  {
+    "id": "TKT-2026-0001",
+    "channel": "email",
+    "received_at": "2026-05-30T08:12:00",
+    "customer": {
+      "name": "Sophie Bernard",
+      "email": "sophie.bernard@gmail.com",
+      "phone": null
+    },
+    "subject": "Colis non livré depuis 3 semaines - URGENT",
+    "raw_message": "Bonjour, j'attends depuis 3 semaines mon colis numéro 6A24567891FR contenant un ordinateur portable à 1200€. Le suivi est bloqué sur 'en cours d'acheminement' depuis le 10 mai. C'est inadmissible, j'ai besoin de cet ordinateur pour mon travail. Je veux un remboursement immédiat ou je porte plainte. Sophie Bernard"
+  },
+  {
+    "id": "TKT-2026-0002",
+    "channel": "email",
+    "received_at": "2026-05-30T09:03:00",
+    "customer": {
+      "name": "James Carter",
+      "email": "j.carter@outlook.com",
+      "phone": null
+    },
+    "subject": "Mail forwarding France",
+    "raw_message": "Hello, I'm moving to France next month (June 15th) and I'd like to know how I can set up mail forwarding from my current address (45 Oxford St, London) to my new address in Lyon. Is there an online process? Thanks, James"
+  },
+  {
+    "id": "TKT-2026-0003",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T09:24:00",
+    "customer": {
+      "name": "Marc Dubois",
+      "email": "m.dubois.client@laposte.net",
+      "phone": null
+    },
+    "subject": "Problème colis",
+    "raw_message": "Bonjour, mon colis n'est jamais arrivé. Merci de m'aider."
+  },
+  {
+    "id": "TKT-2026-0004",
+    "channel": "appel",
+    "received_at": "2026-05-30T09:41:00",
+    "customer": {
+      "name": "Mme Rousseau",
+      "email": null,
+      "phone": "+33 6 12 34 56 78"
+    },
+    "subject": "Appel entrant - retour à l'envoyeur",
+    "raw_message": "[Transcription d'appel - durée 2:34]\n\nClient : Bonjour, je vous appelle parce que j'ai envoyé un colis le 22 mai à ma fille à Bordeaux et il vient de me revenir avec une étiquette 'NPAI - n'habite plus à l'adresse indiquée'. Mais elle habite bien là depuis 5 ans, je ne comprends pas !\n\nConseiller : D'accord madame, vous avez le numéro d'envoi ?\n\nClient : Oui, alors c'est... 8B12998877FR. Et c'est gênant parce qu'il y avait un cadeau d'anniversaire dedans, je voudrais qu'il reparte rapidement, c'est son anniversaire vendredi.\n\nConseiller : Je comprends, je vais regarder ça avec vous."
+  },
+  {
+    "id": "TKT-2026-0005",
+    "channel": "email",
+    "received_at": "2026-05-30T10:15:00",
+    "customer": {
+      "name": "Karim Benali",
+      "email": "karim.benali.pro@gmail.com",
+      "phone": null
+    },
+    "subject": "Demande indemnisation colis cassé",
+    "raw_message": "Bonjour, j'ai reçu hier un colis (n° 7C45123456FR) contenant un vase ancien acheté sur Vinted (300€). L'emballage était intact mais le vase est arrivé cassé en plusieurs morceaux. J'ai pris des photos. Comment je fais pour demander une indemnisation ? Merci de votre retour, Karim Benali"
+  },
+  {
+    "id": "TKT-2026-0006",
+    "channel": "email",
+    "received_at": "2026-05-30T10:42:00",
+    "customer": {
+      "name": "Helena García",
+      "email": "h.garcia@correo.es",
+      "phone": null
+    },
+    "subject": "Consulta envío internacional",
+    "raw_message": "Hola, envié un paquete desde Madrid a París el 18 de mayo (referencia EE998877665ES) y aún no ha llegado a mi familia. ¿Pueden ayudarme a rastrearlo? Es importante porque contiene medicamentos para mi madre. Muchas gracias."
+  },
+  {
+    "id": "TKT-2026-0007",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T11:05:00",
+    "customer": {
+      "name": "Antoine Mercier",
+      "email": "antoine.mercier@startup.fr",
+      "phone": null
+    },
+    "subject": "Question tarifs Colissimo entreprise",
+    "raw_message": "Bonjour, notre startup envoie environ 50 colis par mois (poids moyen 2kg, destination France métropolitaine). Existe-t-il un contrat pro avec des tarifs dégressifs ? Auriez-vous un commercial à nous mettre en relation ? Cordialement, Antoine Mercier - Directeur Logistique chez Ekoflow"
+  },
+  {
+    "id": "TKT-2026-0008",
+    "channel": "appel",
+    "received_at": "2026-05-30T11:32:00",
+    "customer": {
+      "name": "M. Petit",
+      "email": null,
+      "phone": "+33 7 89 01 23 45"
+    },
+    "subject": "Appel - changement d'adresse",
+    "raw_message": "[Transcription d'appel - durée 1:48]\n\nClient : Allô bonjour, je déménage la semaine prochaine, comment je fais pour que mon courrier soit redirigé à ma nouvelle adresse ?\n\nConseiller : Bonjour monsieur, vous comptez le faire pour combien de temps ?\n\nClient : Euh, je sais pas, 6 mois ça serait bien le temps que je dise à tout le monde la nouvelle adresse.\n\nConseiller : OK très bien. Vous voulez le faire en ligne, en bureau de poste ou je peux vous aider à l'initier ?\n\nClient : En ligne ça m'arrange, mais j'aimerais bien savoir le prix avant."
+  },
+  {
+    "id": "TKT-2026-0009",
+    "channel": "email",
+    "received_at": "2026-05-30T12:08:00",
+    "customer": {
+      "name": "Lucie Fontaine",
+      "email": "lucie.fontaine@gmail.com",
+      "phone": null
+    },
+    "subject": "Re: Re: Colis abîmé - relance n°3",
+    "raw_message": "Bonjour, c'est la 3e fois que je vous écris en 10 jours sans aucune réponse !!! Mon dossier indemnisation pour le colis 9D11223344FR (commencé le 18 mai) n'a TOUJOURS pas avancé. Pouvez-vous me dire ce qui se passe ? Je commence à perdre patience et je vais publier mon expérience sur les réseaux sociaux si je n'ai pas de retour aujourd'hui. Lucie F."
+  },
+  {
+    "id": "TKT-2026-0010",
+    "channel": "email",
+    "received_at": "2026-05-30T12:30:00",
+    "customer": {
+      "name": "Pierre Lambert",
+      "email": "pierre.lambert@orange.fr",
+      "phone": null
+    },
+    "subject": "Question simple horaires",
+    "raw_message": "Bonjour, à quelle heure ferme le bureau de poste de la rue de Rennes à Paris le samedi ? Merci. Pierre"
+  },
+  {
+    "id": "TKT-2026-0011",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T13:15:00",
+    "customer": {
+      "name": "Aïcha Diallo",
+      "email": "aicha.diallo@gmail.com",
+      "phone": null
+    },
+    "subject": "Lettre recommandée non distribuée",
+    "raw_message": "Bonjour, j'ai envoyé une lettre recommandée le 20 mai (n° 1A2B3C4D5E) à mon propriétaire pour donner congé de mon logement (préavis 1 mois). Le suivi indique 'distribuée' mais mon propriétaire affirme ne jamais l'avoir reçue. C'est très important car cela impacte mon préavis. Que puis-je faire pour prouver la distribution ?"
+  },
+  {
+    "id": "TKT-2026-0012",
+    "channel": "email",
+    "received_at": "2026-05-30T14:02:00",
+    "customer": {
+      "name": "Tomasz Kowalski",
+      "email": "t.kowalski@wp.pl",
+      "phone": null
+    },
+    "subject": "Package customs France",
+    "raw_message": "Hello, I sent a package from Warsaw to my brother in Marseille (tracking RR556677889PL). It's been stuck at French customs for 8 days. Could you check what's going on? It contains personal items, nothing commercial. Thank you, Tomasz"
+  }
+]

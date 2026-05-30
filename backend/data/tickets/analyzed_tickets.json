@@ -1,0 +1,523 @@
+[
+  {
+    "id": "TKT-2026-0001",
+    "channel": "email",
+    "received_at": "2026-05-30T08:12:00",
+    "customer": {
+      "name": "Sophie Bernard",
+      "email": "sophie.bernard@gmail.com",
+      "phone": null
+    },
+    "subject": "Colis non livré depuis 3 semaines - URGENT",
+    "raw_message": "Bonjour, j'attends depuis 3 semaines mon colis numéro 6A24567891FR contenant un ordinateur portable à 1200€. Le suivi est bloqué sur 'en cours d'acheminement' depuis le 10 mai. C'est inadmissible, j'ai besoin de cet ordinateur pour mon travail. Je veux un remboursement immédiat ou je porte plainte. Sophie Bernard",
+    "analysis": {
+      "summary": "Le client attend son colis depuis 3 semaines, le suivi est bloqué et il a besoin de l'ordinateur portable pour son travail.",
+      "type": "reclamation_indemnisation",
+      "urgency": "haute",
+      "urgency_reason": "Le client a besoin de l'ordinateur portable pour son travail et le suivi est bloqué depuis 3 semaines.",
+      "tone": "colere",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "6A24567891FR",
+        "date_evenement": "10 mai",
+        "montant": "1200.00 EUR",
+        "adresse": null,
+        "autre": []
+      },
+      "missing_info": [
+        "preuve d'achat"
+      ],
+      "suggested_actions": [
+        "Vérifier l'état du colis et proposer un remboursement immédiat ou un remplacement.",
+        "Contacter le destinataire pour obtenir plus d'informations.",
+        "Faire appel à la direction si nécessaire."
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "closed",
+    "assigned_to": "Marie Lefèvre",
+    "messages": [
+      {
+        "id": "dd61738b-a273-4e2c-b635-cc90c893ea05",
+        "role": "agent",
+        "kind": "reply",
+        "author": "Marie Lefèvre",
+        "language": "fr",
+        "content": "Bonjour Sophie Bernard,\n\nJe comprends votre frustration et votre impatience concernant le retard de votre colis numéro 6A24567891FR. Je me sens obligé de vous faire savoir que nous prenons vos réclamations très au sérieux et que nous allons faire de notre mieux pour résoudre ce problème.\n\nJe voudrais d'abord vous remercier de nous avoir fait part de votre situation. Je vais vous aider à trouver une solution. Pour commencer, je vous demande de vérifier si vous avez reçu un courrier douanier demandant une justification. Si ce n'est pas le cas, nous allons contacter directement la douane française pour obtenir plus d'informations. Si nécessaire, nous pourrons également vous aider à obtenir les documents nécessaires pour l'importation de votre ordinateur portable.\n\nJe vous propose de vous mettre en relation avec notre service de réclamation, qui vous aidera à résoudre ce problème. Nous ferons de notre mieux pour vous fournir une solution rapide et efficace.\n\nMerci de votre compréhension et de votre coopération. Nous sommes là pour vous aider.\n\nLe service client La Poste.",
+        "sent_at": "2026-05-30T14:33:55+00:00",
+        "ai_original": "Bonjour Sophie Bernard,\n\nJe comprends votre frustration et votre impatience concernant le retard de votre colis numéro 6A24567891FR. Je me sens obligé de vous faire savoir que nous prenons vos réclamations très au sérieux et que nous allons faire de notre mieux pour résoudre ce problème.\n\nJe voudrais d'abord vous remercier de nous avoir fait part de votre situation. Je vais vous aider à trouver une solution. Pour commencer, je vous demande de vérifier si vous avez reçu un courrier douanier demandant une justification. Si ce n'est pas le cas, nous allons contacter directement la douane française pour obtenir plus d'informations. Si nécessaire, nous pourrons également vous aider à obtenir les documents nécessaires pour l'importation de votre ordinateur portable.\n\nJe vous propose de vous mettre en relation avec notre service de réclamation, qui vous aidera à résoudre ce problème. Nous ferons de notre mieux pour vous fournir une solution rapide et efficace.\n\nMerci de votre compréhension et de votre coopération. Nous sommes là pour vous aider.\n\nLe service client La Poste.",
+        "ai_status": "as_is"
+      }
+    ]
+  },
+  {
+    "id": "TKT-2026-0002",
+    "channel": "email",
+    "received_at": "2026-05-30T09:03:00",
+    "customer": {
+      "name": "James Carter",
+      "email": "j.carter@outlook.com",
+      "phone": null
+    },
+    "subject": "Mail forwarding France",
+    "raw_message": "Hello, I'm moving to France next month (June 15th) and I'd like to know how I can set up mail forwarding from my current address (45 Oxford St, London) to my new address in Lyon. Is there an online process? Thanks, James",
+    "analysis": {
+      "summary": "Demande d'informations sur la mise en place de la redirection de courrier de La Poste.",
+      "type": "demande_info",
+      "urgency": "basse",
+      "urgency_reason": "La demande est faite avec suffisamment de temps avant le déménagement.",
+      "tone": "neutre",
+      "language": "en",
+      "key_info": {
+        "adresse": "45 Oxford St, London",
+        "adresse_destination": "Lyon",
+        "date_evenement": "15 juin"
+      },
+      "missing_info": [
+        "numéro de compte client",
+        "numéro de suivi de l'adresse actuelle"
+      ],
+      "suggested_actions": [
+        "Demander au client de fournir son numéro de compte client et son numéro de suivi de l'adresse actuelle.",
+        "Expliquer au client les étapes pour mettre en place la redirection de courrier en ligne ou par téléphone.",
+        "Proposer au client de contacter le service client de La Poste pour obtenir plus d'informations."
+      ],
+      "customer_message_translated": "Je suis en train de déménager en France le 15 juin et je voudrais savoir comment mettre en place la redirection de courrier de mon adresse actuelle à Lyon."
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0003",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T09:24:00",
+    "customer": {
+      "name": "Marc Dubois",
+      "email": "m.dubois.client@laposte.net",
+      "phone": null
+    },
+    "subject": "Problème colis",
+    "raw_message": "Bonjour, mon colis n'est jamais arrivé. Merci de m'aider.",
+    "analysis": {
+      "summary": "Le client indique que son colis n'est jamais arrivé.",
+      "type": "reclamation",
+      "urgency": "haute",
+      "urgency_reason": "Le colis n'est jamais arrivé, ce qui est une situation bloquante.",
+      "tone": "inquiet",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": null,
+        "date_evenement": null,
+        "montant": null,
+        "adresse": null,
+        "autre": []
+      },
+      "missing_info": [
+        "numéro de suivi",
+        "preuve d'achat"
+      ],
+      "suggested_actions": [
+        "Demander au client de fournir le numéro de suivi du colis",
+        "Vérifier si le colis a été livré à une adresse incorrecte",
+        "Proposer une indemnisation au client"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "waiting",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0004",
+    "channel": "appel",
+    "received_at": "2026-05-30T09:41:00",
+    "customer": {
+      "name": "Mme Rousseau",
+      "email": null,
+      "phone": "+33 6 12 34 56 78"
+    },
+    "subject": "Appel entrant - retour à l'envoyeur",
+    "raw_message": "[Transcription d'appel - durée 2:34]\n\nClient : Bonjour, je vous appelle parce que j'ai envoyé un colis le 22 mai à ma fille à Bordeaux et il vient de me revenir avec une étiquette 'NPAI - n'habite plus à l'adresse indiquée'. Mais elle habite bien là depuis 5 ans, je ne comprends pas !\n\nConseiller : D'accord madame, vous avez le numéro d'envoi ?\n\nClient : Oui, alors c'est... 8B12998877FR. Et c'est gênant parce qu'il y avait un cadeau d'anniversaire dedans, je voudrais qu'il reparte rapidement, c'est son anniversaire vendredi.\n\nConseiller : Je comprends, je vais regarder ça avec vous.",
+    "analysis": {
+      "summary": "Colis retourné avec étiquette 'NPAI' alors que l'adresse est valable, demande de réexpédition pour anniversaire vendredi",
+      "type": "suivi_colis",
+      "urgency": "haute",
+      "urgency_reason": "Colis retourné avec étiquette 'NPAI' et cadeau d'anniversaire dedans",
+      "tone": "inquiet",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "8B12998877FR",
+        "date_evenement": "22 mai",
+        "adresse": "Bordeaux",
+        "autre": [
+          "cadeau d'anniversaire dedans"
+        ]
+      },
+      "missing_info": [
+        "preuve d'envoi"
+      ],
+      "suggested_actions": [
+        "Vérifier l'adresse de livraison",
+        "Contacter la fille pour confirmer l'adresse",
+        "Réexpédier le colis"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": {
+      "client_demand": "Renvoyer un colis retourné à cause d'une adresse incorrecte",
+      "key_facts": [
+        "Colis envoyé le 22 mai",
+        "Adresse de destination correcte",
+        "Colis retourné avec étiquette 'NPAI'",
+        "Cadeau d'anniversaire dedans"
+      ],
+      "engagements": [
+        "Le conseiller va regarder le problème avec le client"
+      ],
+      "tonality": "inquiet",
+      "duration_estimate": "2:34",
+      "follow_up_needed": true
+    },
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0005",
+    "channel": "email",
+    "received_at": "2026-05-30T10:15:00",
+    "customer": {
+      "name": "Karim Benali",
+      "email": "karim.benali.pro@gmail.com",
+      "phone": null
+    },
+    "subject": "Demande indemnisation colis cassé",
+    "raw_message": "Bonjour, j'ai reçu hier un colis (n° 7C45123456FR) contenant un vase ancien acheté sur Vinted (300€). L'emballage était intact mais le vase est arrivé cassé en plusieurs morceaux. J'ai pris des photos. Comment je fais pour demander une indemnisation ? Merci de votre retour, Karim Benali",
+    "analysis": {
+      "summary": "Demande d'indemnisation pour un vase ancien cassé dans un colis",
+      "type": "reclamation_indemnisation",
+      "urgency": "haute",
+      "urgency_reason": "Le vase est cassé et le client a déjà payé 300€",
+      "tone": "frustre",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "7C45123456FR",
+        "date_evenement": "null",
+        "montant": "300.00 EUR",
+        "adresse": "null",
+        "autre": [
+          "photos du vase cassé",
+          "achat sur Vinted"
+        ]
+      },
+      "missing_info": [
+        "preuve d'achat",
+        "photos du colis"
+      ],
+      "suggested_actions": [
+        "Contacter le client pour obtenir les preuves d'achat et les photos du colis",
+        "Envoyer un formulaire de réclamation à Vinted pour obtenir une indemnisation",
+        "Proposer une solution de remplacement ou de remboursement au client"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0006",
+    "channel": "email",
+    "received_at": "2026-05-30T10:42:00",
+    "customer": {
+      "name": "Helena García",
+      "email": "h.garcia@correo.es",
+      "phone": null
+    },
+    "subject": "Consulta envío internacional",
+    "raw_message": "Hola, envié un paquete desde Madrid a París el 18 de mayo (referencia EE998877665ES) y aún no ha llegado a mi familia. ¿Pueden ayudarme a rastrearlo? Es importante porque contiene medicamentos para mi madre. Muchas gracias.",
+    "analysis": {
+      "summary": "Demande de suivi d'un colis envoyé de Madrid à Paris le 18 mai, qui n'a pas encore été livré",
+      "type": "suivi_colis",
+      "urgency": "haute",
+      "urgency_reason": "Le colis contient des médicaments essentiels pour la famille du client",
+      "tone": "inquiet",
+      "language": "es",
+      "key_info": {
+        "numero_colis": "EE998877665ES",
+        "date_evenement": "18 mai 2026",
+        "adresse": "null",
+        "autre": [
+          "colis contient des médicaments"
+        ]
+      },
+      "missing_info": [
+        "adresse de livraison"
+      ],
+      "suggested_actions": [
+        "Vérifier l'état du colis, contacter le destinataire, rechercher un colis perdu"
+      ],
+      "customer_message_translated": "Je vous ai envoyé un colis depuis Madrid le 18 mai, mais il n'est toujours pas arrivé à ma famille. Il contient des médicaments essentiels pour ma mère. Pouvez-vous m'aider à le retrouver ?"
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0007",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T11:05:00",
+    "customer": {
+      "name": "Antoine Mercier",
+      "email": "antoine.mercier@startup.fr",
+      "phone": null
+    },
+    "subject": "Question tarifs Colissimo entreprise",
+    "raw_message": "Bonjour, notre startup envoie environ 50 colis par mois (poids moyen 2kg, destination France métropolitaine). Existe-t-il un contrat pro avec des tarifs dégressifs ? Auriez-vous un commercial à nous mettre en relation ? Cordialement, Antoine Mercier - Directeur Logistique chez Ekoflow",
+    "analysis": {
+      "summary": "La startup Ekoflow souhaite savoir si un contrat pro avec des tarifs dégressifs existe chez La Poste.",
+      "type": "demande_info",
+      "urgency": "basse",
+      "urgency_reason": "Demande d'informations générales sans délai précis.",
+      "tone": "poli",
+      "language": "fr",
+      "key_info": {
+        "adresse": "Ekoflow, sans adresse spécifique mentionnée",
+        "autre": [
+          "50 colis par mois, poids moyen 2kg, destination France métropolitaine"
+        ]
+      },
+      "missing_info": [
+        "numéro de contrat, délai de livraison souhaité"
+      ],
+      "suggested_actions": [
+        "Proposer un devis pour un contrat pro avec des tarifs dégressifs",
+        "Discuter des options de livraison avec un commercial",
+        "Envoyer un formulaire de contact pour obtenir plus d'informations"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "waiting",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0008",
+    "channel": "appel",
+    "received_at": "2026-05-30T11:32:00",
+    "customer": {
+      "name": "M. Petit",
+      "email": null,
+      "phone": "+33 7 89 01 23 45"
+    },
+    "subject": "Appel - changement d'adresse",
+    "raw_message": "[Transcription d'appel - durée 1:48]\n\nClient : Allô bonjour, je déménage la semaine prochaine, comment je fais pour que mon courrier soit redirigé à ma nouvelle adresse ?\n\nConseiller : Bonjour monsieur, vous comptez le faire pour combien de temps ?\n\nClient : Euh, je sais pas, 6 mois ça serait bien le temps que je dise à tout le monde la nouvelle adresse.\n\nConseiller : OK très bien. Vous voulez le faire en ligne, en bureau de poste ou je peux vous aider à l'initier ?\n\nClient : En ligne ça m'arrange, mais j'aimerais bien savoir le prix avant.",
+    "analysis": {
+      "summary": "Le client souhaite rediriger son courrier à sa nouvelle adresse après son déménagement.",
+      "type": "changement_adresse",
+      "urgency": "moyenne",
+      "urgency_reason": "Le client n'a pas précisé une date limite pour le changement d'adresse.",
+      "tone": "neutre",
+      "language": "fr",
+      "key_info": {
+        "adresse": "12 rue X, Paris",
+        "autre": [
+          "déménagement la semaine prochaine",
+          "redirection de courrier"
+        ]
+      },
+      "missing_info": [
+        "durée de la redirection",
+        "méthode de paiement"
+      ],
+      "suggested_actions": [
+        "Proposer au client de se rendre sur le site web de La Poste pour initier le changement d'adresse en ligne",
+        "Fournir au client les informations sur le prix et les options de redirection",
+        "Demander au client de confirmer son adresse e-mail pour envoyer les informations de redirection"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": {
+      "client_demand": "Redirection de courrier à une nouvelle adresse pour 6 mois",
+      "key_facts": [
+        "Déménagement la semaine prochaine",
+        "Redirection de courrier pour 6 mois",
+        "Souhaite connaître le prix avant de procéder"
+      ],
+      "engagements": [
+        "Initier la redirection de courrier en ligne"
+      ],
+      "tonality": "neutre",
+      "duration_estimate": "1:48",
+      "follow_up_needed": false
+    },
+    "status": "closed",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0009",
+    "channel": "email",
+    "received_at": "2026-05-30T12:08:00",
+    "customer": {
+      "name": "Lucie Fontaine",
+      "email": "lucie.fontaine@gmail.com",
+      "phone": null
+    },
+    "subject": "Re: Re: Colis abîmé - relance n°3",
+    "raw_message": "Bonjour, c'est la 3e fois que je vous écris en 10 jours sans aucune réponse !!! Mon dossier indemnisation pour le colis 9D11223344FR (commencé le 18 mai) n'a TOUJOURS pas avancé. Pouvez-vous me dire ce qui se passe ? Je commence à perdre patience et je vais publier mon expérience sur les réseaux sociaux si je n'ai pas de retour aujourd'hui. Lucie F.",
+    "analysis": {
+      "summary": "Demande de suivi sur le dossier indemnisation pour le colis 9D11223344FR qui n'a pas avancé depuis le 18 mai.",
+      "type": "reclamation_indemnisation",
+      "urgency": "haute",
+      "urgency_reason": "Le délai est dépassé et le client menace de publier son expérience sur les réseaux sociaux.",
+      "tone": "colere",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "9D11223344FR",
+        "date_evenement": "18 mai",
+        "montant": null,
+        "adresse": null,
+        "autre": [
+          "dossier indemnisation"
+        ]
+      },
+      "missing_info": [
+        "preuve d'achat",
+        "montant de l'indemnisation"
+      ],
+      "suggested_actions": [
+        "Vérifier l'état du dossier indemnisation",
+        "Contacter le client pour obtenir les informations manquantes",
+        "Proposer une solution de règlement"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0010",
+    "channel": "email",
+    "received_at": "2026-05-30T12:30:00",
+    "customer": {
+      "name": "Pierre Lambert",
+      "email": "pierre.lambert@orange.fr",
+      "phone": null
+    },
+    "subject": "Question simple horaires",
+    "raw_message": "Bonjour, à quelle heure ferme le bureau de poste de la rue de Rennes à Paris le samedi ? Merci. Pierre",
+    "analysis": {
+      "summary": "Demande d'horaires de fermeture du bureau de poste de la rue de Rennes à Paris le samedi",
+      "type": "demande_info",
+      "urgency": "basse",
+      "urgency_reason": "Demande d'information générale",
+      "tone": "neutre",
+      "language": "fr",
+      "key_info": {
+        "adresse": "bureau de poste de la rue de Rennes à Paris"
+      },
+      "missing_info": [],
+      "suggested_actions": [
+        "Vérifier les horaires de fermeture sur le site web officiel de La Poste",
+        "Contacter le bureau de poste directement pour obtenir les informations",
+        "Utiliser un outil de recherche en ligne pour trouver les horaires"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "closed",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0011",
+    "channel": "formulaire",
+    "received_at": "2026-05-30T13:15:00",
+    "customer": {
+      "name": "Aïcha Diallo",
+      "email": "aicha.diallo@gmail.com",
+      "phone": null
+    },
+    "subject": "Lettre recommandée non distribuée",
+    "raw_message": "Bonjour, j'ai envoyé une lettre recommandée le 20 mai (n° 1A2B3C4D5E) à mon propriétaire pour donner congé de mon logement (préavis 1 mois). Le suivi indique 'distribuée' mais mon propriétaire affirme ne jamais l'avoir reçue. C'est très important car cela impacte mon préavis. Que puis-je faire pour prouver la distribution ?",
+    "analysis": {
+      "summary": "Demande de prouver la distribution d'une lettre recommandée non reçue",
+      "type": "reclamation",
+      "urgency": "haute",
+      "urgency_reason": "La situation impacte le préavis et le propriétaire nie avoir reçu la lettre",
+      "tone": "inquiet",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "1A2B3C4D5E",
+        "date_evenement": "20 mai 2026",
+        "adresse": "adresse du propriétaire (pas précisée dans le message)",
+        "autre": [
+          "préavis de 1 mois"
+        ]
+      },
+      "missing_info": [
+        "preuve d'envoi de la lettre recommandée"
+      ],
+      "suggested_actions": [
+        "Demander au client de fournir la preuve d'envoi de la lettre recommandée",
+        "Vérifier les archives de La Poste pour confirmer la distribution de la lettre",
+        "Proposer au client de contacter le propriétaire pour une nouvelle rencontre et essayer de résoudre la situation"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-0012",
+    "channel": "email",
+    "received_at": "2026-05-30T14:02:00",
+    "customer": {
+      "name": "Tomasz Kowalski",
+      "email": "t.kowalski@wp.pl",
+      "phone": null
+    },
+    "subject": "Package customs France",
+    "raw_message": "Hello, I sent a package from Warsaw to my brother in Marseille (tracking RR556677889PL). It's been stuck at French customs for 8 days. Could you check what's going on? It contains personal items, nothing commercial. Thank you, Tomasz",
+    "analysis": {
+      "summary": "Demande de suivi d'un colis bloqué en douane depuis 8 jours",
+      "type": "suivi_colis",
+      "urgency": "haute",
+      "urgency_reason": "Le colis est bloqué en douane depuis 8 jours, ce qui est considéré comme une urgence.",
+      "tone": "inquiet",
+      "language": "en",
+      "key_info": {
+        "numero_colis": "RR556677889PL",
+        "date_evenement": null,
+        "montant": null,
+        "adresse": "Marseille",
+        "autre": [
+          "colis contient des objets personnels, non commerciaux"
+        ]
+      },
+      "missing_info": [
+        "date d'expédition, preuve d'envoi"
+      ],
+      "suggested_actions": [
+        "Vérifier le statut du colis auprès de la douane française, Contacter la douane française pour obtenir des informations supplémentaires, Demander à l'expéditeur de fournir des documents supplémentaires si nécessaire"
+      ],
+      "customer_message_translated": "J'ai envoyé un colis depuis Varsovie à mon frère à Marseille, mais il est bloqué en douane depuis 8 jours. Le colis contient des objets personnels, rien de commercial. Pouvez-vous m'aider à savoir ce qui se passe ?"
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  }
+]

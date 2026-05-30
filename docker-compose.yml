@@ -1,0 +1,51 @@
+# Compose pour Assist360.
+# Utilisable :
+#   - en local : `docker compose up --build`
+#   - en Coolify : importer ce fichier en mode "Docker Compose"
+#
+# Variables attendues dans .env (copier depuis .env.example) :
+#   GROQ_API_KEY, NEXT_PUBLIC_API_URL, CORS_ORIGINS
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: assist360-backend
+    restart: unless-stopped
+    environment:
+      LLM_PROVIDER: groq
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      GROQ_MODEL: ${GROQ_MODEL:-llama-3.1-8b-instant}
+      GROQ_BASE_URL: ${GROQ_BASE_URL:-https://api.groq.com/openai/v1}
+      PII_REDACT: ${PII_REDACT:-true}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persistence des tickets analysés et de l'historique modifié à l'exécution.
+      # Optionnel : retire ce bloc pour repartir à neuf à chaque redéploiement.
+      - assist360-data:/app/data/tickets
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # URL publique de l'API : bakée dans le bundle au build.
+        # En Coolify : surcharger via "Build variables" sur l'app frontend.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    container_name: assist360-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+
+volumes:
+  assist360-data:

@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* Dark mode via classe `.dark` sur <html> (toggle manuel) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-soft: #f8fafc;
+  --border: #e2e8f0;
+  --border-soft: #f1f5f9;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --strong-foreground: #0b1e44;
+  --brand: #003da5;
+  --brand-soft: #e6efff;
+  --accent: #ffcd00;
+  --scrollbar: #d4d8df;
+  --scrollbar-hover: #b8bdc5;
+}
+
+.dark {
+  --background: #0b1220;
+  --foreground: #e2e8f0;
+  --card: #111c2e;
+  --card-soft: #0e1828;
+  --border: #1f2c45;
+  --border-soft: #182238;
+  --muted: #182238;
+  --muted-foreground: #94a3b8;
+  --strong-foreground: #f1f5f9;
+  --brand: #5dadff;
+  --brand-soft: #142847;
+  --accent: #ffcd00;
+  --scrollbar: #2a3654;
+  --scrollbar-hover: #3a4868;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-soft: var(--card-soft);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-strong-foreground: var(--strong-foreground);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --animate-blob-1: blob1 22s ease-in-out infinite;
+  --animate-blob-2: blob2 28s ease-in-out infinite;
+  --animate-blob-3: blob3 24s ease-in-out infinite;
+  --animate-fade-up: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  --animate-shimmer: shimmer 2.2s linear infinite;
+  --animate-pulse-ring: pulseRing 2.4s ease-out infinite;
+  --animate-particle: particle 14s linear infinite;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+@keyframes blob1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(60px, -40px) scale(1.15); }
+  66% { transform: translate(-30px, 50px) scale(0.9); }
+}
+@keyframes blob2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-50px, 30px) scale(0.95); }
+  66% { transform: translate(40px, -60px) scale(1.1); }
+}
+@keyframes blob3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, -40px) scale(1.2); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes pulseRing {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+@keyframes particle {
+  0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-10vh) translateX(40px); opacity: 0; }
+}
+
+.animate-blob-1 { animation: var(--animate-blob-1); }
+.animate-blob-2 { animation: var(--animate-blob-2); }
+.animate-blob-3 { animation: var(--animate-blob-3); }
+.animate-fade-up { animation: var(--animate-fade-up); opacity: 0; }
+.animate-shimmer {
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: var(--animate-shimmer);
+}
+.animate-pulse-ring { animation: var(--animate-pulse-ring); }
+.animate-particle { animation: var(--animate-particle); }
+
+/* Minimal prose styling for the markdown renderer in the knowledge base.
+   Tailwind v4 doesn't include @tailwindcss/typography by default. */
+.prose { color: var(--foreground); line-height: 1.6; }
+.prose h1 { font-size: 1.5rem; font-weight: 600; margin: 0.5rem 0 1rem; letter-spacing: -0.01em; }
+.prose h2 { font-size: 1.125rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: var(--brand); }
+.prose h3 { font-size: 1rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+.prose p { margin: 0.5rem 0; }
+.prose ul { list-style: disc; padding-left: 1.4rem; margin: 0.5rem 0; }
+.prose ol { list-style: decimal; padding-left: 1.4rem; margin: 0.5rem 0; }
+.prose li { margin: 0.25rem 0; }
+.prose strong { font-weight: 600; color: var(--strong-foreground); }
+.prose code {
+  background: var(--muted);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.875em;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.prose th, .prose td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose th {
+  background: var(--card-soft);
+  font-weight: 600;
+  color: var(--muted-foreground);
+}
+.prose tbody tr:nth-child(odd) { background: var(--card-soft); }
+.prose a { color: var(--brand); text-decoration: underline; }

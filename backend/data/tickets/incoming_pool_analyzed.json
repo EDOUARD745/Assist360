@@ -1,0 +1,174 @@
+[
+  {
+    "id": "TKT-2026-INC-A",
+    "channel": "email",
+    "customer": {
+      "name": "Nathalie Garcia",
+      "email": "nathalie.garcia.dijon@gmail.com",
+      "phone": null
+    },
+    "subject": "Chronopost en retard - cadeau mariage",
+    "raw_message": "Bonjour, j'ai envoyé un Chronopost (numéro 5C77889922FR) hier en pensant qu'il arriverait aujourd'hui pour le mariage de ma sœur. Le suivi indique 'en cours d'acheminement'. La cérémonie est demain matin, je suis vraiment paniquée. Y a-t-il un moyen d'accélérer la livraison ou de la rediriger directement sur le lieu de la réception ? Merci d'avance, c'est très important pour moi.",
+    "analysis": {
+      "summary": "Demande d'accélération de la livraison d'un colis Chronopost pour un mariage",
+      "type": "suivi_colis",
+      "urgency": "haute",
+      "urgency_reason": "Le colis est attendu pour un mariage demain matin et le suivi indique 'en cours d'acheminement'",
+      "tone": "inquiet",
+      "language": "fr",
+      "key_info": {
+        "numero_colis": "5C77889922FR",
+        "date_evenement": "hier",
+        "adresse": "null",
+        "autre": [
+          "lieu de la réception du mariage"
+        ]
+      },
+      "missing_info": [
+        "adresse de livraison finale"
+      ],
+      "suggested_actions": [
+        "Vérifier le suivi du colis pour obtenir une estimation de l'heure de livraison",
+        "Contacter Chronopost pour demander si un accélération de la livraison est possible",
+        "Demander à la famille de la mariée de contacter Chronopost pour obtenir des informations sur le colis"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-INC-B",
+    "channel": "email",
+    "customer": {
+      "name": "Hans Müller",
+      "email": "hans.mueller@gmx.de",
+      "phone": null
+    },
+    "subject": "Verlorenes Paket aus Frankreich",
+    "raw_message": "Sehr geehrte Damen und Herren, ich habe ein Paket aus Lyon nach München bestellt (Tracking-Nummer EE112233445FR), das nun seit 12 Tagen nicht angekommen ist. Können Sie mir helfen, es zu finden? Es handelt sich um einen Wein, geschenkt von meinem Schwiegervater. Mit freundlichen Grüßen, Hans Müller",
+    "analysis": {
+      "summary": "Le client a commandé un colis de Lyon à Munich, mais il n'est pas arrivé depuis 12 jours. Il s'agit d'un vin offert par son beau-père.",
+      "type": "suivi_colis",
+      "urgency": "haute",
+      "urgency_reason": "Le colis n'est pas arrivé depuis 12 jours, ce qui est anormal.",
+      "tone": "inquiet",
+      "language": "de",
+      "key_info": {
+        "numero_colis": "EE112233445FR",
+        "date_evenement": "12 jours",
+        "adresse": "Lyon à Munich",
+        "autre": [
+          "vin",
+          "offert par le beau-père"
+        ]
+      },
+      "missing_info": [
+        "preuve d'achat"
+      ],
+      "suggested_actions": [
+        "Vérifier l'état du colis",
+        "Contacter le destinataire",
+        "Demander une enquête"
+      ],
+      "customer_message_translated": "Je suis inquiet car mon colis n'est pas arrivé depuis 12 jours. Il s'agit d'un vin offert par mon beau-père."
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-INC-C",
+    "channel": "appel",
+    "customer": {
+      "name": "M. Dupond",
+      "email": null,
+      "phone": "+33 6 99 88 77 66"
+    },
+    "subject": "Appel entrant - boîte aux lettres cassée",
+    "raw_message": "[Transcription d'appel - durée 1:20]\n\nClient : Allô bonjour, je vous appelle parce que ma boîte aux lettres a été forcée pendant la nuit et plein de courrier a disparu. Je voulais savoir comment me faire renvoyer les recommandés qui auraient pu être laissés dedans et qu'on pourrait pas récupérer.\n\nConseiller : D'accord monsieur, vous avez fait une déclaration ?\n\nClient : Oui j'ai porté plainte au commissariat ce matin. Mais le facteur est passé hier soir donc je suis sûr qu'il y avait du courrier.",
+    "analysis": {
+      "summary": "La boîte aux lettres du client a été forcée et des courriers ont disparu. Il souhaite savoir comment récupérer les recommandés qui auraient pu être laissés dedans.",
+      "type": "reclamation",
+      "urgency": "haute",
+      "urgency_reason": "Le client a porté plainte au commissariat et est sûr qu'il y avait du courrier hier soir.",
+      "tone": "inquiet",
+      "language": "fr",
+      "key_info": {
+        "adresse": "boîte aux lettres du client",
+        "date_evenement": null,
+        "montant": null,
+        "autre": [
+          "courrier disparu",
+          "boîte aux lettres forcée"
+        ]
+      },
+      "missing_info": [
+        "numéro de suivi des recommandés"
+      ],
+      "suggested_actions": [
+        "Demander au client de fournir le numéro de suivi des recommandés",
+        "Vérifier si des recommandés ont été envoyés à l'adresse du client",
+        "Proposer une solution pour récupérer les recommandés"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": {
+      "client_demand": "Renvoyer les recommandés qui auraient pu être laissés dans la boîte aux lettres",
+      "key_facts": [
+        "Boîte aux lettres forcée pendant la nuit",
+        "Courrier disparu",
+        "Déclaration portée au commissariat ce matin"
+      ],
+      "engagements": [
+        "Renseigner sur le processus de renvoi des recommandés"
+      ],
+      "tonality": "inquiet",
+      "duration_estimate": "1:20",
+      "follow_up_needed": true
+    },
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  },
+  {
+    "id": "TKT-2026-INC-D",
+    "channel": "formulaire",
+    "customer": {
+      "name": "Camille Roux",
+      "email": "camille.roux.boulanger@gmail.com",
+      "phone": null
+    },
+    "subject": "Tarif envoi colis Réunion",
+    "raw_message": "Bonjour, je voudrais envoyer un colis de 4kg à ma fille qui vit à La Réunion. Quels sont les tarifs et les délais ? Merci.",
+    "analysis": {
+      "summary": "Demande d'informations sur les tarifs et les délais pour envoyer un colis de 4kg à La Réunion",
+      "type": "demande_info",
+      "urgency": "basse",
+      "urgency_reason": "Demande d'informations générale",
+      "tone": "neutre",
+      "language": "fr",
+      "key_info": {
+        "poids": "4kg",
+        "destination": "La Réunion"
+      },
+      "missing_info": [
+        "numéro de suivi",
+        "adresse de destination"
+      ],
+      "suggested_actions": [
+        "Proposer les options de transport disponibles (par exemple, Colissimo, Chronopost)",
+        "Fournir les tarifs correspondants en fonction du poids et de la destination",
+        "Indiquer les délais de livraison estimés"
+      ],
+      "customer_message_translated": null
+    },
+    "call_summary": null,
+    "status": "open",
+    "assigned_to": "Marie Lefèvre",
+    "messages": []
+  }
+]
