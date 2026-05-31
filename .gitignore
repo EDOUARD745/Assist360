@@ -12,3 +12,4 @@ frontend/.env.local
 .DS_Store
 *.pyc
 doc.txt
+"~$*"
