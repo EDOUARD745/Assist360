@@ -87,8 +87,8 @@ export default function LoginPage() {
         <div className="hidden lg:flex flex-col justify-between p-10 xl:p-14">
           <div className="flex items-center gap-3 animate-fade-up" style={{ animationDelay: "0.05s" }}>
             <div className="relative">
-              <div className="h-11 w-11 rounded-xl bg-white/15 backdrop-blur ring-1 ring-white/30 grid place-items-center font-bold text-xl">
-                A
+              <div className="h-12 w-12 rounded-xl bg-white/95 grid place-items-center p-1.5 ring-1 ring-white/30">
+                <img src="/logo-icon.png" alt="Assist360" className="h-full w-full object-contain" />
               </div>
               <span className="absolute inset-0 rounded-xl ring-2 ring-white/40 animate-pulse-ring" />
             </div>
@@ -149,8 +149,8 @@ export default function LoginPage() {
             style={{ animationDelay: "0.2s" }}
           >
             <div className="lg:hidden flex items-center gap-3 mb-6">
-              <div className="h-10 w-10 rounded-xl bg-white/15 backdrop-blur ring-1 ring-white/30 grid place-items-center font-bold">
-                A
+              <div className="h-11 w-11 rounded-xl bg-white/95 grid place-items-center p-1.5 ring-1 ring-white/30">
+                <img src="/logo-icon.png" alt="Assist360" className="h-full w-full object-contain" />
               </div>
               <div className="text-lg font-semibold">Assist360</div>
             </div>

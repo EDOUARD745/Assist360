@@ -13,9 +13,7 @@ export default function MobileTopbar({ onOpenMenu }: { onOpenMenu: () => void })
         <Menu className="h-5 w-5" />
       </button>
       <div className="flex items-center gap-2">
-        <div className="h-7 w-7 rounded-md bg-brand text-white grid place-items-center font-bold text-sm">
-          A
-        </div>
+        <img src="/logo-icon.png" alt="Assist360" className="h-8 w-8 object-contain" />
         <div className="font-semibold tracking-tight text-sm">Assist360</div>
       </div>
     </header>

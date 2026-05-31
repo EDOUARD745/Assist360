@@ -70,9 +70,11 @@ export default function Sidebar({
       >
         <div className="px-5 pt-6 pb-5 flex items-start justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-9 w-9 rounded-lg bg-brand text-white grid place-items-center font-bold">
-              A
-            </div>
+            <img
+              src="/logo-icon.png"
+              alt="Assist360"
+              className="h-10 w-10 object-contain"
+            />
             <div>
               <div className="font-semibold tracking-tight">Assist360</div>
               <div className="text-xs text-muted-foreground">Conseiller La Poste</div>

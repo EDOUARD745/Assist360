@@ -16,35 +16,35 @@ import {
 const MEMBERS = [
   {
     name: "SARR Fatou Kiné",
-    role: "Product Lead",
-    bio: "Pilotage produit, lien métier La Poste, design des parcours conseiller.",
+    role: "IA Engineer",
+    bio: "Deploiement IA, integration et migration du produit.",
     color: "from-[#003da5] to-[#5dadff]",
     initials: "M1",
-    skills: ["Product", "UX", "Métier"],
+    skills: ["Deploiement", "Integration", "Migration"],
   },
   {
-    name: "NDIEYE Mame Yacine",
-    role: "Data Scientist",
+    name: "DIEYE Mame Yacine",
+    role: "IA Engineer",
     bio: "Conception des prompts, évaluation des modèles, fine-tuning des sorties JSON.",
     color: "from-[#ffcd00] to-[#ff8a00]",
     initials: "M2",
-    skills: ["LLM", "Prompts", "Eval"],
+    skills: ["LLM", "Prompt Engineering", "Evaluation"],
   },
   {
-    name: "Membre 3",
-    role: "ML Engineer",
-    bio: "Architecture RAG, embeddings multilingues, pipeline d'inférence streaming.",
+    name: "Sarah",
+    role: "Infrastructure / Cloud Engineer",
+    bio: "hebergement, securité et infrastructure pour le modèle.",
     color: "from-[#22c55e] to-[#0ea5e9]",
     initials: "M3",
-    skills: ["RAG", "Backend", "API"],
+    skills: ["Infrastructure", "Cloud", "Security"],
   },
   {
-    name: "Membre 4",
-    role: "Product Designer",
-    bio: "Maquettes, design system, prototype interactif et identité visuelle.",
+    name: "Sophia",
+    role: "Data Engineer",
+    bio: "Acquisition, nettoyage et preparation des données et migration.",
     color: "from-[#a855f7] to-[#ec4899]",
     initials: "M4",
-    skills: ["UI", "Design", "Figma"],
+    skills: ["Data", "Migration", "Nettoyage"],
   },
 ];
 
@@ -115,8 +115,8 @@ export default function TeamPage() {
           Retour à la connexion
         </Link>
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-white/10 backdrop-blur ring-1 ring-white/20 grid place-items-center font-bold">
-            A
+          <div className="h-11 w-11 rounded-xl bg-white/95 grid place-items-center p-1.5 ring-1 ring-white/30">
+            <img src="/logo-icon.png" alt="Assist360" className="h-full w-full object-contain" />
           </div>
           <div>
             <div className="text-sm font-semibold">Assist360</div>
