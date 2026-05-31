@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
+import MobileTopbar from "@/components/MobileTopbar";
 import { getSession } from "@/lib/auth";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const [ready, setReady] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     if (!getSession()) {
@@ -26,9 +28,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="flex min-h-screen">
-      <Sidebar />
-      <main className="flex-1 min-w-0">{children}</main>
+    <div className="lg:flex lg:min-h-screen">
+      <Sidebar mobileOpen={mobileOpen} onMobileClose={() => setMobileOpen(false)} />
+      <div className="flex-1 min-w-0 flex flex-col min-h-screen">
+        <MobileTopbar onOpenMenu={() => setMobileOpen(true)} />
+        <main className="flex-1 min-w-0">{children}</main>
+      </div>
     </div>
   );
 }

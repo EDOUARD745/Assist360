@@ -16,10 +16,10 @@ export default function SettingsPage() {
   useEffect(() => setS(getSession()), []);
 
   return (
-    <div className="p-6 lg:p-8 max-w-4xl mx-auto space-y-5">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto space-y-4 sm:space-y-5">
       <header>
-        <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
-          <Settings className="h-6 w-6 text-brand" />
+        <h1 className="text-xl sm:text-2xl font-semibold tracking-tight flex items-center gap-2">
+          <Settings className="h-5 w-5 sm:h-6 sm:w-6 text-brand" />
           Paramètres
         </h1>
         <p className="text-sm text-muted-foreground mt-1">

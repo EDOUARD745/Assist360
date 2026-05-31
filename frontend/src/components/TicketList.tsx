@@ -119,7 +119,7 @@ export default function TicketList() {
 
   return (
     <div className="bg-card rounded-xl ring-1 ring-border overflow-hidden">
-      <div className="px-5 py-3 border-b border-border flex items-center gap-3 flex-wrap">
+      <div className="px-4 sm:px-5 py-3 border-b border-border flex items-center gap-2 sm:gap-3 flex-wrap">
         <h2 className="text-sm font-semibold">File d'attente</h2>
         {pendingCount > 0 && (
           <button
@@ -127,7 +127,7 @@ export default function TicketList() {
             className="text-[11px] inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 hover:bg-emerald-200 animate-fade-up"
           >
             <BellRing className="h-3 w-3" />
-            {pendingCount} nouveau{pendingCount > 1 ? "x" : ""} ticket{pendingCount > 1 ? "s" : ""}
+            {pendingCount} nouveau{pendingCount > 1 ? "x" : ""}
           </button>
         )}
         <button
@@ -141,9 +141,10 @@ export default function TicketList() {
           ) : (
             <Zap className="h-3 w-3" />
           )}
-          Simuler une nouvelle demande
+          <span className="hidden sm:inline">Simuler une nouvelle demande</span>
+          <span className="sm:hidden">Nouvelle demande</span>
         </button>
-        <div className="flex flex-wrap gap-1 w-full">
+        <div className="flex flex-wrap gap-1 w-full overflow-x-auto">
           {FILTERS.map((f) => (
             <button
               key={f.key}
@@ -182,20 +183,20 @@ export default function TicketList() {
               <Link
                 href={`/tickets/${t.id}`}
                 className={cn(
-                  "flex items-start gap-4 px-5 py-3.5 hover:bg-muted transition-colors",
+                  "flex items-start gap-3 sm:gap-4 px-4 sm:px-5 py-3 sm:py-3.5 hover:bg-muted transition-colors",
                   isClosed && "opacity-60",
                   isNew && "bg-brand-soft/60 animate-fade-up",
                 )}
               >
                 {isNew && (
-                  <span className="absolute right-12 top-3 inline-flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-brand text-white">
+                  <span className="absolute right-10 top-2.5 inline-flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-brand text-white">
                     <BellRing className="h-2.5 w-2.5" />
                     NOUVEAU
                   </span>
                 )}
-                <span className={`mt-1.5 h-2 w-2 rounded-full ${STATUS_DOT[t.status]}`} title={STATUS_LABEL[t.status]} />
+                <span className={`mt-1.5 h-2 w-2 rounded-full shrink-0 ${STATUS_DOT[t.status]}`} title={STATUS_LABEL[t.status]} />
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 flex-wrap">
+                  <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                     <span className="font-medium text-sm truncate">{t.customer.name}</span>
                     <span className="text-xs text-muted-foreground/70">{LANG_FLAG[t.analysis.language] || ""}</span>
                     {!isClosed && (
@@ -203,7 +204,7 @@ export default function TicketList() {
                         {u}
                       </span>
                     )}
-                    <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-muted text-foreground">
+                    <span className="hidden sm:inline text-[10px] font-medium px-1.5 py-0.5 rounded bg-muted text-foreground">
                       {TYPE_LABEL[t.analysis.type] || t.analysis.type}
                     </span>
                     <span
@@ -218,16 +219,22 @@ export default function TicketList() {
                     </span>
                   </div>
                   <div className="text-sm text-foreground truncate mt-0.5">{t.subject}</div>
-                  <div className="text-xs text-muted-foreground truncate mt-1">{t.analysis.summary}</div>
+                  <div className="text-xs text-muted-foreground truncate mt-1 hidden sm:block">{t.analysis.summary}</div>
+                  <div className="flex items-center gap-2 mt-1.5 text-xs text-muted-foreground sm:hidden">
+                    <Icon className="h-3 w-3" />
+                    <span>{CHANNEL_LABEL[t.channel]}</span>
+                    <span>·</span>
+                    <span>{timeAgo(t.received_at)}</span>
+                  </div>
                 </div>
-                <div className="flex flex-col items-end gap-1 text-xs text-muted-foreground shrink-0">
+                <div className="hidden sm:flex flex-col items-end gap-1 text-xs text-muted-foreground shrink-0">
                   <div className="flex items-center gap-1">
                     <Icon className="h-3 w-3" />
                     <span>{CHANNEL_LABEL[t.channel]}</span>
                   </div>
                   <span>{timeAgo(t.received_at)}</span>
                 </div>
-                <ChevronRight className="h-4 w-4 text-muted-foreground/50 self-center" />
+                <ChevronRight className="h-4 w-4 text-muted-foreground/50 self-center shrink-0" />
               </Link>
             </li>
           );

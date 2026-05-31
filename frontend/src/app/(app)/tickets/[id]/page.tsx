@@ -34,13 +34,13 @@ export default function TicketPage({
     );
 
   return (
-    <div className="p-6 lg:p-8 space-y-5 max-w-7xl mx-auto">
+    <div className="p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5 max-w-7xl mx-auto">
       <TicketHeader ticket={ticket} />
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-5">
         <div className="lg:col-span-3">
           <ConversationPanel ticket={ticket} onTicketUpdate={setTicket} />
         </div>
-        <div className="lg:col-span-2 min-h-[600px]">
+        <div className="lg:col-span-2 lg:min-h-[600px]">
           <AssistantPanel ticket={ticket} />
         </div>
       </div>

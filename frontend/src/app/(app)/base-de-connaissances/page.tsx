@@ -35,11 +35,11 @@ export default function KbPage() {
   const active = docs.find((d) => d.id === activeId) ?? null;
 
   return (
-    <div className="p-6 lg:p-8 max-w-7xl mx-auto space-y-5">
-      <header className="flex items-end justify-between">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-4 sm:space-y-5">
+      <header className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
         <div>
-          <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
-            <BookOpen className="h-6 w-6 text-brand" />
+          <h1 className="text-xl sm:text-2xl font-semibold tracking-tight flex items-center gap-2">
+            <BookOpen className="h-5 w-5 sm:h-6 sm:w-6 text-brand" />
             Base de connaissances
           </h1>
           <p className="text-sm text-muted-foreground mt-1">
@@ -49,9 +49,9 @@ export default function KbPage() {
         <span className="text-xs text-muted-foreground/70">{docs.length} fiches</span>
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5">
         {/* Liste des fiches */}
-        <aside className="lg:col-span-4 bg-card rounded-xl ring-1 ring-border overflow-hidden flex flex-col max-h-[calc(100vh-200px)]">
+        <aside className="lg:col-span-4 bg-card rounded-xl ring-1 ring-border overflow-hidden flex flex-col max-h-[60vh] lg:max-h-[calc(100vh-200px)]">
           <div className="p-3 border-b border-border-soft">
             <div className="flex items-center gap-2 rounded-lg ring-1 ring-border focus-within:ring-brand px-2.5 py-1.5 bg-muted">
               <Search className="h-3.5 w-3.5 text-muted-foreground/70" />

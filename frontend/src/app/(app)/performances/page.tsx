@@ -156,8 +156,8 @@ export default function PerformancesPage() {
   }, [tickets]);
 
   return (
-    <div className="p-6 lg:p-8 max-w-7xl mx-auto space-y-5">
-      <header className="flex items-end justify-between">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-4 sm:space-y-5">
+      <header className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
             <BarChart3 className="h-6 w-6 text-brand" />
@@ -179,7 +179,7 @@ export default function PerformancesPage() {
       </header>
 
       {/* Big KPI cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
         <BigCard
           icon={Clock}
           label="Temps moyen de traitement"
