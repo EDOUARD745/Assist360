@@ -16,6 +16,13 @@ import {
   Phone,
   Mail,
   FileText,
+  Package,
+  CheckSquare,
+  UserCheck,
+  Search as SearchIcon,
+  Send as SendIcon,
+  AlertTriangle,
+  ChevronRight as ChevronRightIcon,
 } from "lucide-react";
 import {
   api,
@@ -329,18 +336,7 @@ function AnalyseTab({ ticket }: { ticket: Ticket }) {
         </Section>
       )}
 
-      <Section title="Actions suggérées">
-        <ul className="space-y-1.5">
-          {a.suggested_actions.map((s, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm">
-              <span className="h-4 w-4 rounded-full bg-brand-soft text-brand text-[10px] font-semibold grid place-items-center shrink-0 mt-0.5">
-                {i + 1}
-              </span>
-              <span>{s}</span>
-            </li>
-          ))}
-        </ul>
-      </Section>
+      <SuggestedActions actions={a.suggested_actions} />
 
       <div>
         <div className="text-[11px] uppercase tracking-wider font-semibold text-muted-foreground mb-1.5 flex items-center gap-1.5">
@@ -660,6 +656,58 @@ function TranslateTab({ ticket }: { ticket: Ticket }) {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function pickActionIcon(text: string) {
+  const t = text.toLowerCase();
+  if (t.includes("enquête") || t.includes("enquete") || t.includes("dossier")) return Package;
+  if (t.includes("vérif") || t.includes("verif") || t.includes("statut") || t.includes("suivi")) return SearchIcon;
+  if (t.includes("contact") || t.includes("livreur") || t.includes("client") || t.includes("conseiller")) return UserCheck;
+  if (t.includes("envoy") || t.includes("transmet") || t.includes("transfer")) return SendIcon;
+  if (t.includes("indemn") || t.includes("rembour")) return CheckSquare;
+  if (t.includes("escalade") || t.includes("urgent") || t.includes("alerte")) return AlertTriangle;
+  return CheckSquare;
+}
+
+function SuggestedActions({ actions }: { actions: string[] }) {
+  if (!actions || actions.length === 0) return null;
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-2">
+        <div className="text-[11px] uppercase tracking-wider font-semibold text-muted-foreground flex items-center gap-1.5">
+          <Sparkles className="h-3 w-3 text-brand" />
+          Actions suggérées
+        </div>
+        <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-brand-soft text-brand inline-flex items-center gap-1">
+          <Sparkles className="h-2.5 w-2.5" />
+          IA
+        </span>
+      </div>
+      <ul className="space-y-2">
+        {actions.map((s, i) => {
+          const Icon = pickActionIcon(s);
+          const recommended = i === 0;
+          return (
+            <li key={i}>
+              <button
+                type="button"
+                className="group w-full flex items-center gap-3 px-3 py-2.5 rounded-lg ring-1 ring-border bg-card hover:bg-muted text-left transition-colors"
+              >
+                <Icon className="h-4 w-4 text-foreground shrink-0" />
+                <span className="flex-1 text-sm text-foreground">{s}</span>
+                {recommended && (
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-accent text-strong-foreground tracking-wide">
+                    RECOMMANDÉ
+                  </span>
+                )}
+                <ChevronRightIcon className="h-3.5 w-3.5 text-muted-foreground/70 group-hover:text-foreground shrink-0" />
+              </button>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

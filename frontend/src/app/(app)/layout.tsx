@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
-import MobileTopbar from "@/components/MobileTopbar";
+import TopHeader from "@/components/TopHeader";
 import { getSession } from "@/lib/auth";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -31,7 +31,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     <div className="lg:flex lg:min-h-screen">
       <Sidebar mobileOpen={mobileOpen} onMobileClose={() => setMobileOpen(false)} />
       <div className="flex-1 min-w-0 flex flex-col min-h-screen">
-        <MobileTopbar onOpenMenu={() => setMobileOpen(true)} />
+        <TopHeader onOpenMenu={() => setMobileOpen(true)} />
         <main className="flex-1 min-w-0">{children}</main>
       </div>
     </div>
