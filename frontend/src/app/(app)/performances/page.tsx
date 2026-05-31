@@ -164,7 +164,7 @@ export default function PerformancesPage() {
             Performances
           </h1>
           <p className="text-sm text-muted-foreground mt-1">
-            Pilotage de l'activité conseillers - vue manager.
+            Pilotage de l'activité conseillers.
           </p>
         </div>
         <select
